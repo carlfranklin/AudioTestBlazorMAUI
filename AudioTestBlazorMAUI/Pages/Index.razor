@@ -3,8 +3,14 @@
 <input style="width: 100%;" @bind="@url" />
 <br />
 <br />
-<button disabled="@playdisabled" class="btn btn-primary" @onclick="IncrementCount">Play</button>
+<img style="width: 50px;opacity: @ControlsOpacity;" @onclick="Rewind" src="rewind.png" />
+<img style="width: 50px;opacity: @PlayOpacity;" @onclick="PlayAudio" src="play.png" />
+<img style="width: 50px;opacity: @ControlsOpacity;" @onclick="PauseAudio" src="pause.png" />
+<img style="width: 50px;opacity: @ControlsOpacity;" @onclick="StopAudio" src="stop.png" />
+<img style="width: 50px;opacity: @ControlsOpacity;" @onclick="Forward" src="ffwd.png" />
 <br />
 <br />
-<div>@AudioMessage @PlayPosition</div>
 <progress id="fileProgress" style="width: 100%; height: 50px;" max="100" value="@Percentage"></progress>
+<br />
+<div> @AudioMessage @PlayPosition</div>
+

@@ -6,7 +6,7 @@ namespace AudioTestBlazorMAUI.Pages
     {
         protected IAudioPlayer player = null;
         protected FileStream stream = null;
-        protected string url = "";
+        protected string url = "https://media.pwop.com/files/mondays/MillahThreewaySong.mp3";
         protected string AudioMessage = "";
         protected string ProgressPercent = "";
         protected string PlayPosition = "";

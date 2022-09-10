@@ -1,0 +1,10 @@
+﻿@page "/"
+
+<input style="width: 100%;" @bind="@url" />
+<br />
+<br />
+<button disabled="@playdisabled" class="btn btn-primary" @onclick="IncrementCount">Play</button>
+<br />
+<br />
+<div>@AudioMessage @PlayPosition</div>
+<progress id="fileProgress" style="width: 100%; height: 50px;" max="100" value="@Percentage"></progress>

@@ -3,11 +3,11 @@
 <input style="width: 100%;" @bind="@url" />
 <br />
 <br />
-<img style="width: 50px;opacity: @ControlsOpacity;" @onclick="Rewind" src="rewind.png" />
-<img style="width: 50px;opacity: @PlayOpacity;" @onclick="PlayAudio" src="play.png" />
-<img style="width: 50px;opacity: @ControlsOpacity;" @onclick="PauseAudio" src="pause.png" />
-<img style="width: 50px;opacity: @ControlsOpacity;" @onclick="StopAudio" src="stop.png" />
-<img style="width: 50px;opacity: @ControlsOpacity;" @onclick="Forward" src="ffwd.png" />
+<img class="@rewindButtonClass" style="width: 50px;opacity: @ControlsOpacity;" @onclick="Rewind" src="rewind.png" />
+<img class="@playButtonClass" style="width: 50px;opacity: @PlayOpacity;" @onclick="PlayAudio" src="play.png" />
+<img class="@pauseButtonClass" style="width: 50px;opacity: @ControlsOpacity;" @onclick="PauseAudio" src="pause.png" />
+<img class="@stopButtonClass" style="width: 50px;opacity: @ControlsOpacity;" @onclick="StopAudio" src="stop.png" />
+<img class="@forwardButtonClass" style="width: 50px;opacity: @ControlsOpacity;" @onclick="Forward" src="ffwd.png" />
 <br />
 <br />
 <progress id="fileProgress" style="width: 100%; height: 50px;" max="100" value="@Percentage"></progress>

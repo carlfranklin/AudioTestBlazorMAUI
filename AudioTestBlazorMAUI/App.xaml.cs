@@ -20,8 +20,8 @@ public partial class App : Application
             nativeWindow.Activate();
             IntPtr windowHandle = WinRT.Interop.WindowNative.GetWindowHandle(nativeWindow);
             WindowId windowId = Microsoft.UI.Win32Interop.GetWindowIdFromWindow(windowHandle);
-            Constants.AppWindow = Microsoft.UI.Windowing.AppWindow.GetFromWindowId(windowId);
-            Constants.AppWindow.Resize(new SizeInt32(Constants.WindowWidth, Constants.WindowHeight));
+            Globals.AppWindow = Microsoft.UI.Windowing.AppWindow.GetFromWindowId(windowId);
+            Globals.AppWindow.Resize(new SizeInt32(Globals.WindowWidth, Globals.WindowHeight));
             // Constants.AppWindow.Hide(); // doesn't work here
 #endif
         });

@@ -6,7 +6,7 @@ using Windows.Graphics;
 
 namespace AudioTestBlazorMAUI
 {
-    public static class Constants
+    public static class Globals
     {
         public static readonly int WindowWidth = 900;
         public static readonly int WindowHeight = 500;

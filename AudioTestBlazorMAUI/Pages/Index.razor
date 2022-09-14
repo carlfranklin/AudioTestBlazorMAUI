@@ -1,5 +1,6 @@
 ﻿@page "/"
 
+<div>Enter a URL to an MP3 file:</div>
 <input style="width: 100%;" @bind="@url" />
 <br />
 <br />
@@ -10,7 +11,7 @@
 <img class="@forwardButtonClass" style="width: 50px;opacity: @ControlsOpacity;" @onclick="Forward" src="ffwd.png" />
 <br />
 <br />
-<progress id="fileProgress" style="width: 100%; height: 50px;" max="100" value="@Percentage"></progress>
+<progress style="width: 100%; height: 50px;" max="100" value="@Percentage"></progress>
 <br />
 <div> @AudioMessage @PlayPosition</div>
 

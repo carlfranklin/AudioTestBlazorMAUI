@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Components;
-using Newtonsoft.Json;
 
 namespace AudioTestBlazorMAUI.Pages
 {
@@ -10,8 +9,7 @@ namespace AudioTestBlazorMAUI.Pages
         protected IAudioPlayer player = null;       // media player
         protected FileStream stream = null;         // stream used for playing
         private MediaState mediaState;              // Stopped, Paused, or Playing
-        protected string url = "https://media.pwop.com/files/music/carl/04_BoogieGroove_CarlFranklin_BeenAWhile.mp3";
-        //protected string url = "https://localhost:7027/file/walkthewalk.mp3"; // Use this url to test downloading audio from webapi endpoint
+        protected string url = "https://media.pwop.com/files/music/carl/03_ChainReaction_CarlFranklin_BeenAWhile.mp3";
         protected string AudioMessage = "";         // Playing, Paused or error
         protected double Percentage = 0;            // percentage of audio played used to set progress bar value
         protected string ProgressPercent = "";      // formatted percentage string (not shown in this demo)
